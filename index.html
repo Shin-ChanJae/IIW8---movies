@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 2026-11-01, updated by chanjae: IIW8 poster 18 -- one page with every poster movie (user 11-01 "포스터 오른쪽 상단에 전체 movie
+     다 있는 페이지"). Static: this file + the seven mp4 files in the same folder, so it works on any static host (GitHub Pages etc.).
+     Each movie has an anchor (#loop_symmetry ...) so the per-section QR codes can jump straight to it. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IIW8 Poster 18 Movies</title>
+<meta name="description" content="Movies for IIW8 poster 18: grain boundary effects on slip transmission and dislocation avalanches during nanoindentation (3D DD coupled with FEM).">
+<style>
+  :root { --blue: #003399; --red: #d62728; --ink: #1a1a1a; --grey: #5b6475; --tint: #eef3fb; --line: #dfe3ea; --bg: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.45; }
+  header { background: var(--tint); border-bottom: 1px solid var(--line); padding: 20px 16px 16px; }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  .tag { color: var(--blue); font-weight: bold; font-size: 14px; letter-spacing: .02em; }
+  h1 { color: var(--blue); font-size: 22px; line-height: 1.25; margin: 6px 0 8px; }
+  .who { font-size: 15px; margin: 0; }
+  .who b { font-weight: bold; }
+  .sub { color: var(--grey); font-size: 14px; margin: 6px 0 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  nav a { font-size: 13px; color: var(--blue); text-decoration: none; border: 1px solid #c9d4ec; background: #fff; border-radius: 14px; padding: 4px 10px; }
+  main { padding: 8px 16px 32px; }
+  section { padding: 18px 0 20px; border-bottom: 1px solid var(--line); scroll-margin-top: 8px; }
+  h2 { display: flex; align-items: center; gap: 10px; font-size: 19px; color: var(--blue); margin: 0 0 6px; }
+  .num { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 14px; font-weight: bold;
+         display: inline-flex; align-items: center; justify-content: center; }
+  p.cap { margin: 0 0 10px; font-size: 15px; }
+  p.cap em { color: var(--red); font-style: normal; font-weight: bold; }
+  video { display: block; width: 100%; height: auto; background: #f4f6fa; border: 1px solid var(--line); border-radius: 6px; }
+  footer { color: var(--grey); font-size: 13px; padding: 20px 16px 36px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="tag">IIW8 · Poster 18</div>
+    <h1>Grain Boundary Effects on Slip Transmission and Dislocation Avalanches During Nanoindentation</h1>
+    <!-- 2026-11-01, updated by chanjae: co-author Jaehyun Cho, no numbered affiliations, Ill Ryu = corresponding author (as the poster) -->
+    <p class="who"><b>Chanjae Shin</b>, <b>Jaehyun Cho</b> (LLNL) and <b>Ill Ryu</b>*</p>
+    <p class="sub" style="margin-top:2px">Seoul National University · *corresponding author</p>
+    <p class="sub">3D dislocation dynamics coupled with finite elements (DDM), Al. Numbers match the poster sections. Tap a movie to play.</p>
+    <nav>
+      <a href="#polycrystal_tension">5 Polycrystals</a>
+      <a href="#loop_symmetry">6 Loop symmetry</a>
+      <a href="#prismatic_loops">7 Prismatic loops</a>
+      <a href="#cusping">8 Cusping</a>
+      <a href="#tilt_gb">9 Pile-up → transmission</a>
+      <a href="#twist_gb">10 Twist GB</a>
+      <a href="#columnar_wall">12 GB walls</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section id="polycrystal_tension">
+    <h2><span class="num">5</span>What DDM can simulate: polycrystals in tension</h2>
+    <p class="cap">Voronoi (24 grains), columnar (12 grains) and a single crystal under uniaxial tension; dislocations coloured by grain, with the stress–strain curves.</p>
+    <video controls playsinline preload="metadata" src="05_polycrystal_tension.mp4#t=0.1"></video>
+  </section>
+  <section id="loop_symmetry">
+    <h2><span class="num">6</span>Loop symmetry by orientation</h2>
+    <p class="cap">Top views of the loops under the tip for [010], [101] and [111] indentation: <em>4-, 2- and 3-fold patterns</em>, as Al indents along the same axes.</p>
+    <video controls playsinline preload="metadata" src="06_loop_symmetry.mp4#t=0.1"></video>
+  </section>
+  <section id="prismatic_loops">
+    <h2><span class="num">7</span>Prismatic loops and pop-in</h2>
+    <p class="cap">Al [101], R = 500 nm sphere. Loops nucleate one by one, cross-slip and close into <em>prismatic loops</em> along the loading axis (no artificial rule); the big pop-in comes once they build a dislocation forest.</p>
+    <video controls playsinline preload="metadata" src="07_prismatic_loops.mp4#t=0.1"></video>
+  </section>
+  <section id="cusping">
+    <h2><span class="num">8</span>Cusping at a GB, as in MD</h2>
+    <p class="cap">(100)|(310) symmetric tilt GB (18.43° about [010]), one Frank–Read source, R = 500 nm tip: <em>half-loops bow into grain 2</em> along the GB and grow into new loops.</p>
+    <video controls playsinline preload="metadata" src="08_cusping.mp4#t=0.1"></video>
+  </section>
+  <section id="tilt_gb">
+    <h2><span class="num">9</span>Pile-up → transmission</h2>
+    <p class="cap">Berkovich tip (R = 125 nm), symmetric [010] tilt GB of 8.7° at 194 nm from the tip axis: <em>loops pile up behind the GB</em> and their stress drives the emission into grain 2.</p>
+    <video controls playsinline preload="metadata" src="09_tilt_gb_transmission.mp4#t=0.1"></video>
+  </section>
+  <section id="twist_gb">
+    <h2><span class="num">10</span>Very close to a twist GB</h2>
+    <p class="cap">Al [010], Berkovich tip: single crystal vs bicrystals with a 20° twist GB 89 nm from the tip axis, <em>low vs high GB mobility</em>; load–depth curve and dislocation density in grain 2.</p>
+    <video controls playsinline preload="metadata" src="10_twist_gb.mp4#t=0.1"></video>
+  </section>
+  <section id="columnar_wall">
+    <h2><span class="num">12</span>Pile-up thickens GB walls</h2>
+    <p class="cap">Columnar polycrystal in tension, top view on grain 8 (walls of 31.6° and 26.4°): dislocations <em>pile up at the walls</em> and the dense layer grows into the grain.</p>
+    <video controls playsinline preload="metadata" src="12_columnar_wall.mp4#t=0.1"></video>
+  </section>
+</main>
+<footer class="wrap">Chanjae Shin · Seoul National University · as13562@snu.ac.kr</footer>
+</body>
+</html>
